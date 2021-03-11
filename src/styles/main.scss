@@ -1,2 +1,7 @@
-$primary: green;
 @import "~bootstrap/scss/bootstrap";
+
+@import "config";
+
+@import "custom";
+
+@import "responsive";
