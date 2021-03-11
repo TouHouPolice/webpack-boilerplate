@@ -3,7 +3,14 @@ const path = require("path");
 module.exports = {
   entry: { main: "./src/index.js", vendor: "./src/vendor.js" },
 
-  plugins: [new HtmlWebpackPlugin({ template: "./src/template.html" })],
+  plugins: [new HtmlWebpackPlugin(
+    {
+      filename: 'index.html',
+      template: 'src/index.html',
+      chunks: ['main','vendor']
+      
+    }
+   )],
   module: {
     rules: [
       {
